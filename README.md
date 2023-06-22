@@ -44,7 +44,7 @@ durata DOUBLE
 prezzo DOUBLE NOT NULL
 idOperatore INT
 
-Cassa 
+Pagamento 
 id INT PK AUTO_INCREMENT
 idCliente INT
 idTrattamento INT
@@ -70,6 +70,23 @@ nomeMacchinario VARCHAR(50)
 verificaMacchinario BOOLEAN
 idTrattamento INT
 idStanza INT
+
+Descrizione ed uso:
+Il software è utile nella gestione di un piccolo-medio centro estetico per l'ottimizzazione del tempo e la gestione degli operatori.
+
+Moduli:
+Gestione Appuntamento,
+Gestione Cliente,
+Gestione Macchinario,
+Gestione operatore,
+Gestione Prodotto,
+Gestione Pagamento,
+Gestione Stanza,
+Gestione Trattamento,
+Gestione Utente,
+Menu di login
+
+
 
 
 
