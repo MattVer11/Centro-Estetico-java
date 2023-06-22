@@ -29,4 +29,48 @@ cognome VARCHAR(50) NOT NULL
 email VARCHAR(50)
 telefono VARCHAR(20) NOT NULL
 
+Appuntamento 
+id INT PK AUTO_INCREMENT
+data DATE NOT NULL
+ora DATETIME NOT NULL
+idTrattamento INT
+idCliente INT
+idOperatore INT
+
+Trattamento 
+id INT PK AUTO_INCREMENT
+nomeTrattamento VARCHAR(50) NOT NULL
+durata DOUBLE
+prezzo DOUBLE NOT NULL
+idOperatore INT
+
+Cassa 
+id INT PK AUTO_INCREMENT
+idCliente INT
+idTrattamento INT
+idProdotto INT
+
+Stanza 
+id INT PK AUTO_INCREMENT
+nStanza INT NOT NULL
+nomeStanza VARCHAR(50)
+idTrattamento INT
+
+Prodotto 
+id INT PK AUTO_INCREMENT
+nome VARCHAR(50) NOT NULL
+prezzo DOUBLE NOT NULL
+quantita INT NOT NULL
+idTrattamento INT
+
+Macchinario 
+id INT PK AUTO_INCREMENT
+nMacchinari INT NOT NULL
+nomeMacchinario VARCHAR(50)
+verificaMacchinario BOOLEAN
+idTrattamento INT
+idStanza INT
+
+
+
 
