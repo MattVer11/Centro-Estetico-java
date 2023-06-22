@@ -86,6 +86,13 @@ Gestione Trattamento,
 Gestione Utente,
 Menu di login
 
+I ruoli esistenti sono 3:
+1) administator
+2)sectretary
+3)operator
+
+Per poter accedere la prima volta al programma è necessario avere un utente amministratore presente nella tabella utente e conoscerne le credenziali d'accesso.
+
 
 
 
